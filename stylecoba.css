@@ -1,0 +1,106 @@
+/* reset */
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(227, 230, 230);
+    line-height: 1.5;
+   
+}
+
+/* Latihan 1 (Mengatur Kolom) */
+.container-1{
+    width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+
+    /* display: flex */
+    display: flex;
+
+    
+}
+
+.kolom-1{
+    flex: 3;
+    order: 2;
+    
+}
+
+.sidebar-1{
+    flex: 1;
+    order: 1;
+}
+
+.sidebar-2{
+    flex: 1;
+    order: 3;
+}
+
+/* LATIHAN 2 */
+.container-2{
+    max-width: 800px;
+    margin: 50px auto;
+   
+}
+
+.layanan{
+    /* width: 30%; */
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+   
+}
+
+.layanan.satu{
+    background-color: lightblue;
+}
+
+.layanan.dua{
+    background-color: lightcoral;
+}
+
+.layanan.tiga{
+    background-color: lightgreen;
+}
+
+/* LATIHAN 3 */
+.container-3{
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail{
+    width: 40%;
+}
+
+
+.thumbnail img {
+    width: 100%;
+}
+
+/* RESPONSIVE */
+@media (min-width: 650px){
+    .container-satu{
+        display: flex;
+    justify-content: space-between;
+    }
+    .container-dua{
+        display: flex;
+    justify-content: space-between;
+    }
+
+    .layanan {
+        width: 30%;
+    }
+
+    .thumbnail{
+        width: 25%;
+    }
+}
